@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mvvm_starter/core/services/api_service.dart';
+import 'package:flutter_mvvm_starter/core/services/log_service.dart';
 import 'package:flutter_mvvm_starter/data/repositories/remote/auth_repository.dart';
 import 'package:flutter_mvvm_starter/data/state/auth_state.dart';
 import 'package:flutter_mvvm_starter/ui/auth/login_screen.dart';
@@ -7,7 +8,8 @@ import 'package:flutter_mvvm_starter/viewmodels/auth_view_model.dart';
 import 'package:flutter_splash_screen/flutter_splash_screen.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+Future<void> main() async {
+  await Log.init();
   Provider.debugCheckInvalidValueType = null;
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
