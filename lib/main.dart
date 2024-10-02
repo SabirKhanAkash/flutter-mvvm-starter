@@ -8,10 +8,10 @@ import 'package:flutter_mvvm_starter/viewmodels/auth_view_model.dart';
 import 'package:flutter_splash_screen/flutter_splash_screen.dart';
 import 'package:provider/provider.dart';
 
-Future<void> main() async {
-  await Log.init();
+void main() async {
   Provider.debugCheckInvalidValueType = null;
   WidgetsFlutterBinding.ensureInitialized();
+  Log.init();
   runApp(const MyApp());
 }
 

@@ -13,6 +13,7 @@ dependencies:
   http: ^1.2.2
   json_annotation: ^4.9.0
   logger: ^2.4.0
+  path_provider: ^2.1.4
   provider: ^6.1.2
   cupertino_icons: ^1.0.6
 
@@ -33,5 +34,5 @@ flutter:
   fonts:
     - family: inter
       fonts:
-        - asset: fonts/inter.ttf
-          style: italic
+        - asset: assets/fonts/inter.ttf
+          style: normal
